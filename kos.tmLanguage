@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>.kos</string>
+		<string>.craft</string>
+	</array>
+	<key>name</key>
+	<string>k-OS</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>reserved word</string>
+			<key>match</key>
+			<string>^\s*(?i:declare|set|until|wait|when|print|add|remove|break|clearscreen|edit|if|list|lock|rename|run|stage|switch|toggle|warp|reboot|shutdown)\s*</string>
+			<key>name</key>
+			<string>keyword.source.kerboscript</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>comment</key>
+			<string>string</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.source.kerboscript</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.kerboscript</string>
+	<key>uuid</key>
+	<string>886bf29f-5844-4c49-8542-812a9e0ebc5c</string>
+</dict>
+</plist>
