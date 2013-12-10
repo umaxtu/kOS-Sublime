@@ -1,0 +1,32 @@
+{
+  "scope": "source.kerboscript",
+  "completions":
+  [
+    { "trigger": "set", "contents": "SET $1 TO $2." },
+    { "trigger": "dec", "contents": "DECLARE $0." },
+    { "trigger": "cls", "contents": "CLEARSCREEN." },
+    { "trigger": "pri", "contents": "PRINT $0." },
+    "DECLARE",
+    "SET",
+    "UNTIL",
+    "WAIT",
+    "WHEN",
+    "PRINT",
+    "ADD",
+    "REMOVE",
+    "BREAK",
+    "CLEARSCREEN",
+    "EDIT",
+    "IF",
+    "LIST",
+    "LOCK",
+    "RENAME",
+    "RUN",
+    "STAGE",
+    "SWITCH",
+    "TOGGLE",
+    "WARP",
+    "REBOOT",
+    "SHUTDOWN"
+  ]
+}
