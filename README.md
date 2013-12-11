@@ -8,7 +8,8 @@ keywords and offers some completions.
 Usage
 =====
 
-With Package Control, you can just Add Repository `https://github.com/EdvardM/kOS-Sublime`
+With Package Control, you can just Add Repository `https://github.com/EdvardM/kOS-Sublime`,
+after which you should be able to install the package (Package Control / Install Package -> kos)
 and that should be it - then all files ending with '.kos' or '.craft' use k-OS mode by default.
 
 
