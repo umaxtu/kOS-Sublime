@@ -27,6 +27,20 @@
     "TOGGLE",
     "WARP",
     "REBOOT",
-    "SHUTDOWN"
+    "SHUTDOWN",
+
+    "ABS",
+    "MOD",
+    "FLOOR",
+    "CEILING",
+    "ROUND",
+    "SQRT",
+    "SIN",
+    "COS",
+    "TAN",
+    "ARCSIN",
+    "ARCCOS",
+    "ARCTAN",
+    "ARCTAN2",
   ]
 }
