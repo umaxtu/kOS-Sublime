@@ -12,5 +12,5 @@ With Package Control, you can just Add Repository `https://github.com/EdvardM/kO
 after which you should be able to install the package (Package Control / Install Package -> kos)
 and that should be it - then all files ending with '.kos' or '.craft' use k-OS mode by default.
 
-
+UPDATE: seems like kOS reads only .txt files (maybe something else too?), so using .kos or .craft is not recommendable.
 
