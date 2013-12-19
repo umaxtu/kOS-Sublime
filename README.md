@@ -2,8 +2,7 @@ kOS-Sublime
 ===========
 
 Simple [Sublime 3](http://www.sublimetext.com/3) plugin to ease in creation of 
-[KerboScript](https://github.com/Nivekk/KOS) files. It highlights most of the 
-keywords and offers some completions.
+[KerboScript](https://github.com/Nivekk/KOS) files used by kOS in the most awesome thing known as [Kerbal Space Program](http://kerbalspaceprogram.com). It highlights most of the keywords / control structures and offers some completions as well.
 
 Usage
 =====
