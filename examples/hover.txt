@@ -1,0 +1,33 @@
+SET output TO 1.
+lock throttle to output.
+
+stage.
+
+SET setpoint TO 0.
+SET prev TO 0.
+SET error TO 0.
+set int to 0.
+SET time TO missiontime.
+
+until stage:liquidfuel < 5 {
+	set dt to missiontime - time.
+	set time to missiontime.
+	set error to setpoint - verticalspeed.
+	set int to int + error*dt.
+	set d to (error - prev)/dt.
+	set output to error/10 + int/15 + der/30.
+	set prev to error.
+
+	if output > 1 {
+		set output to 1.
+	}.
+	if output < 0 {
+		set output to 0.
+	}.
+
+}
+
+set koi to 1 set bar to 2.
+set koi to 1 
+set bar to 2.
+print "foo".
