@@ -102,7 +102,7 @@
             "name": "keyword.operator.kerboscript"
         },
         {
-            "match": "\\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels) (on|off)\\b",
+            "match": "\\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels|ag1|ag2|ag3|ag4|ag5|ag6|ag7|ag8|ag9|ag0) (on|off)\\b",
             "name": "support.function.source.kerboscript"
         },
         {
