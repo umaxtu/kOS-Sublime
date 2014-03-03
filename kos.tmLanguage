@@ -13,6 +13,12 @@
 	<array>
 		<dict>
 			<key>match</key>
+			<string>//.*</string>
+			<key>name</key>
+			<string>comment.line.source.kerboscript</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?i:add|print|remove|break|clearscreen|copy|delete|declare|edit|list|lock|on|log|rename|remove|run|set|stage|switch|toggle|unlock|reboot|shutdown)\s+[^\.]+$</string>
 			<key>name</key>
 			<string>invalid.illegal.source.kerboscript</string>
@@ -114,7 +120,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(?i:(print))\s.+(?i:(at))\b</string>
+			<string>\b(?i:(print))\s[^&quot;]+(?i:(at))\b</string>
 			<key>name</key>
 			<string>text.source.kerboscript</string>
 		</dict>
@@ -135,7 +141,7 @@
 			<key>match</key>
 			<string>\b(?i:(when))\s.+(?i:(then))\b</string>
 			<key>name</key>
-			<string>keyword.control.source.kerboscript</string>
+			<string>text.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -174,12 +180,6 @@
 			<string>&quot;</string>
 			<key>name</key>
 			<string>string.quoted.double.source.kerboscript</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>//.*</string>
-			<key>name</key>
-			<string>comment.line.source.kerboscript</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
