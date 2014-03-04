@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>txt</string>
+		<string>kos</string>
 	</array>
 	<key>name</key>
 	<string>kOS</string>

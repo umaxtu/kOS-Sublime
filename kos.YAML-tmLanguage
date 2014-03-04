@@ -2,7 +2,7 @@
 ---
 name: kOS
 scopeName: source.kos
-fileTypes: ['txt']
+fileTypes: [txt, kos]
 uuid: a73c33ac-e3fa-45c6-ba20-040413ac4dc4
 
 patterns:
