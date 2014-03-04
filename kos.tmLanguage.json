@@ -1,120 +1,117 @@
 {
-    "fileTypes": [
-        "kos",
-        "craft"
-    ],
+    "fileTypes": ["kos", "txt"],
     "name": "k-OS",
     "patterns": [
         {
             "match": "//.*",
-            "name": "comment.line.source.kerboscript"
+            "name": "comment.line.source.kos"
         },
         {
             "match": "(?i:add|print|remove|break|clearscreen|copy|delete|declare|edit|list|lock|on|log|rename|remove|run|set|stage|switch|toggle|unlock|reboot|shutdown)\\s+[^\\.]+$",
-            "name": "invalid.illegal.source.kerboscript"
+            "name": "invalid.illegal.source.kos"
         },
         {
             "match": "\\b(?i:heading|bearing|direction)\\b",
-            "name": "storage.type.source.kerboscript"
+            "name": "storage.type.source.kos"
         },
         {
             "captures": {
                 "1": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 },
                 "2": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 }
             },
             "match": "\\s*(?i:(set|log|rename))\\s.*(?i:(to))\\s*",
-            "name": "text.source.kerboscript"
+            "name": "text.source.kos"
         },
         {
             "captures": {
                 "1": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 },
                 "2": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 }
             },
             "match": "\\s*(?i:(copy))\\s.*(?i:(to|from))\\s*",
-            "name": "text.source.kerboscript"
+            "name": "text.source.kos"
         },
         {
             "captures": {
                 "1": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 },
                 "2": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 }
             },
             "match": "\\s*(?i:(delete))\\s.*(?i:(from))\\s*",
-            "name": "text.source.kerboscript"
+            "name": "text.source.kos"
         },
         {
             "captures": {
                 "1": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 },
                 "2": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 }
             },
             "match": "\\b(?i:(lock))\\s.*(?i:(to))\\b",
-            "name": "text.source.kerboscript"
+            "name": "text.source.kos"
         },
         {
             "captures": {
                 "1": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 },
                 "2": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 }
             },
             "match": "\\b(?i:(print))\\s[^\"]+(?i:(at))\\b",
-            "name": "text.source.kerboscript"
+            "name": "text.source.kos"
         },
         {
             "captures": {
                 "1": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 },
                 "2": {
-                    "name": "keyword.source.kerboscript"
+                    "name": "keyword.source.kos"
                 }
             },
             "match": "\\b(?i:(when))\\s.+(?i:(then))\\b",
-            "name": "text.source.kerboscript"
+            "name": "text.source.kos"
         },
         {
             "match": "\\b(?i:add|remove|break|clearscreen|delete|declare( parameter)?|edit|print|remove|run|stage|switch to|toggle|unlock|warp|reboot|shutdown|list|reboot)\\b",
-            "name": "keyword.source.kerboscript"
+            "name": "keyword.source.kos"
         },
         {
             "match": "\\b(?i:until|if|wait)\\b",
-            "name": "keyword.control.kerboscript"
+            "name": "keyword.control.kos"
         },
         {
             "match": "\\b(?i:and|or)\\b",
-            "name": "keyword.operator.kerboscript"
+            "name": "keyword.operator.kos"
         },
         {
             "match": "\\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels) (on|off)\\b",
-            "name": "support.function.source.kerboscript"
+            "name": "support.function.source.kos"
         },
         {
             "match": "\\b(?i:abs|mod|floor|ceiling|round|round|sqrt|sin|cos|tan|arcsin|arccos|arctan|arctan2)\\b",
-            "name": "support.function.source.kerboscript"
+            "name": "support.function.source.kos"
         },
         {
             "begin": "\"",
             "end": "\"",
-            "name": "string.quoted.double.source.kerboscript"
+            "name": "string.quoted.double.source.kos"
         }
     ],
-    "scopeName": "source.kerboscript",
+    "scopeName": "source.kos",
     "uuid": "886bf29f-5844-4c49-8542-812a9e0ebc5c"
 }
