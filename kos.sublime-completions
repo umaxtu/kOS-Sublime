@@ -28,6 +28,7 @@
     "WARP",
     "REBOOT",
     "SHUTDOWN",
+    "PRESERVE",
 
     "ABS",
     "MOD",
