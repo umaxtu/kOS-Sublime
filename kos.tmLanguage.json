@@ -1,7 +1,6 @@
 {
     "fileTypes": [
-        "kos",
-        "craft"
+        "ks",
     ],
     "name": "k-OS",
     "patterns": [

@@ -1,5 +1,5 @@
 {
-  "scope": "source.kerboscript",
+  "scope": "source.kos",
   "completions":
   [
     { "trigger": "set", "contents": "SET $1 TO $2." },
@@ -28,6 +28,7 @@
     "WARP",
     "REBOOT",
     "SHUTDOWN",
+    "PRESERVE",
 
     "ABS",
     "MOD",
