@@ -4,8 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>txt</string>
-		<string>kos</string>
+		<string>ks</string>
 	</array>
 	<key>name</key>
 	<string>kOS</string>
@@ -57,7 +56,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\s*(?i:(set|log|rename))\s.*(?i:(to))\s*</string>
+			<string>(?i:(set|log|rename))\s+[\w]+\s+((?i:to))</string>
 			<key>name</key>
 			<string>text.source.kos</string>
 		</dict>
@@ -76,7 +75,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\s*(?i:(copy))\s.*(?i:(to|from))\s*</string>
+			<string>(?i:(copy))\s.*(?i:(to|from))</string>
 			<key>name</key>
 			<string>text.source.kos</string>
 		</dict>
@@ -138,14 +137,27 @@
 			<string>text.source.kos</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.kos</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.kos</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\b(?i:(when))\s.+(?i:(then))\b</string>
+			<string>\b(?i:(when))\s+.+\s+(?i:(then))\b</string>
 			<key>name</key>
 			<string>text.source.kos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:add|remove|break|clearscreen|delete|declare( parameter)?|edit|print|remove|run|stage|switch to|toggle|unlock|warp|reboot|shutdown|list|reboot)\b</string>
+			<string>\b(?i:add|remove|break|clearscreen|delete|declare( parameter)?|edit|print|set|remove|run|stage|switch to|toggle|unlock|warp|reboot|shutdown|list|reboot)\b</string>
 			<key>name</key>
 			<string>keyword.source.kos</string>
 		</dict>
@@ -163,13 +175,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels) (on|off)\b</string>
+			<string>\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels) (?i:on|off)\b</string>
 			<key>name</key>
 			<string>support.function.source.kos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:abs|mod|floor|ceiling|round|round|sqrt|sin|cos|tan|arcsin|arccos|arctan|arctan2)\b</string>
+			<string>\b(?i:abs|mod|min|max|floor|ceiling|round|round|sqrt|sin|cos|tan|arcsin|arccos|arctan|arctan2)\b</string>
 			<key>name</key>
 			<string>support.function.source.kos</string>
 		</dict>

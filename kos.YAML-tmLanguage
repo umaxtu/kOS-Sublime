@@ -1,4 +1,10 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
+# Warning: this file is out-of-date: while I'd rather 
+# edit this compared to XML, I don't know yet a simple
+# way to build xml file from this yaml file, without using
+# external tools other than sublime. See associated
+# .tmLanguage file that contains most recent version.
+
 ---
 name: kOS
 scopeName: source.kos
