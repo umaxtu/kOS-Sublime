@@ -7,39 +7,26 @@
 		<string>ks</string>
 	</array>
 	<key>name</key>
-	<string>kOS</string>
+	<string>Kerbal Operating System (kOS)</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>match</key>
 			<string>//.*</string>
 			<key>name</key>
-			<string>comment.line.source.kos</string>
+			<string>comment.line.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:add|print|remove|break|clearscreen|copy|delete|declare|edit|list|lock|on|log|rename|remove|run|set|stage|switch|toggle|unlock|reboot|shutdown)\s+[^\.]+$</string>
+			<string>(?i:add|print|remove|break|clearscreen|copy|delete|declare|edit|list|lock|\bon|log|rename|remove|run|set|stage|switch|toggle|unlock|reboot|shutdown)\s+[^\.]+$</string>
 			<key>name</key>
-			<string>invalid.illegal.source.kos</string>
+			<string>invalid.illegal.source.kerboscript</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.source.kos</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.source.kos</string>
-				</dict>
-			</dict>
 			<key>match</key>
 			<string>\b(?i:heading|bearing|direction)\b</string>
 			<key>name</key>
-			<string>storage.type.source.kos</string>
+			<string>storage.type.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -47,18 +34,18 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i:(set|log|rename))\s+[\w]+\s+((?i:to))</string>
+			<string>\s*(?i:(set|log|rename))\s.*(?i:(to))\s*</string>
 			<key>name</key>
-			<string>text.source.kos</string>
+			<string>text.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -66,18 +53,18 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i:(copy))\s.*(?i:(to|from))</string>
+			<string>\s*(?i:(copy))\s.*(?i:(to|from))\s*</string>
 			<key>name</key>
-			<string>text.source.kos</string>
+			<string>text.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -85,18 +72,18 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\s*(?i:(delete))\s.*(?i:(from))\s*</string>
 			<key>name</key>
-			<string>text.source.kos</string>
+			<string>text.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -104,18 +91,18 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\b(?i:(lock))\s.*(?i:(to))\b</string>
 			<key>name</key>
-			<string>text.source.kos</string>
+			<string>text.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -123,18 +110,18 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\b(?i:(print))\s[^"]+(?i:(at))\b</string>
 			<key>name</key>
-			<string>text.source.kos</string>
+			<string>text.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -142,61 +129,92 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.source.kos</string>
+					<string>keyword.source.kerboscript</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(?i:(when))\s+.+\s+(?i:(then))\b</string>
+			<string>\b(?i:(when))\s.+(?i:(then))\b</string>
 			<key>name</key>
-			<string>text.source.kos</string>
+			<string>text.source.kerboscript</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.kerboscript</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.kerboscript</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(?i:(for))\s.+(?i:(in))\b</string>
+			<key>name</key>
+			<string>text.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:add|remove|break|clearscreen|delete|declare( parameter)?|edit|print|set|remove|run|stage|switch to|toggle|unlock|warp|reboot|shutdown|list|reboot)\b</string>
+			<string>\b(?i:add|remove|break|clearscreen|delete|declare( parameter)?|parameter|edit|print|remove|run|stage|switch to|toggle|unlock|warp|reboot|shutdown|list|reboot|function)\b</string>
 			<key>name</key>
-			<string>keyword.source.kos</string>
+			<string>keyword.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:until|if|wait)\b</string>
+			<string>\b(?i:until|if|wait|else)\b</string>
 			<key>name</key>
-			<string>keyword.control.kos</string>
+			<string>keyword.control.kerboscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:and|or)\b</string>
+			<string>\b(?i:not|and|or|true|false|&lt;&gt;|&gt;=|=|&gt;|&lt;)\b</string>
 			<key>name</key>
-			<string>keyword.operator.kos</string>
+			<string>keyword.operator.kerboscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels) (?i:on|off)\b</string>
+			<string>\b(?i:\+|-|\*|/|\^|e|\(|\))\b</string>
 			<key>name</key>
-			<string>support.function.source.kos</string>
+			<string>keyword.operator.kerboscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:abs|mod|min|max|floor|ceiling|round|round|sqrt|sin|cos|tan|arcsin|arccos|arctan|arctan2)\b</string>
+			<string>\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels|ag1|ag2|ag3|ag4|ag5|ag6|ag7|ag8|ag9|ag0) (on|off)\b</string>
 			<key>name</key>
-			<string>support.function.source.kos</string>
+			<string>support.function.source.kerboscript</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:abs|mod|floor|ceiling|round|round|sqrt|sin|cos|tan|arcsin|arccos|arctan|arctan2)\b</string>
+			<key>name</key>
+			<string>support.function.source.kerboscript</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\"</string>
+			<string>"</string>
 			<key>end</key>
-			<string>\"</string>
+			<string>"</string>
 			<key>name</key>
-			<string>string.quoted.double.source.kos</string>
+			<string>string.quoted.double.source.kerboscript</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[-\+]?[0-9]*\.?[0-9]</string>
+			<key>name</key>
+			<string>constant.numeric.kerboscript</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.kos</string>
+	<string>source.kerboscript</string>
 	<key>uuid</key>
-	<string>a73c33ac-e3fa-45c6-ba20-040413ac4dc4</string>
+	<string>886bf29f-5844-4c49-8542-812a9e0ebc5c</string>
 </dict>
 </plist>
