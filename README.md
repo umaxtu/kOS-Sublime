@@ -1,8 +1,8 @@
 Outdated!
 =========
 
-Please see https://github.com/KSP-KOS/EditorTools for much more up-to-date version. Atom highlighting should work
-as-is with Sublime, as long as it is converted to plist format.
+Please see https://github.com/KSP-KOS/EditorTools for much more up-to-date and better version. As such, I won't maintain this anymore.
+
 
 kOS-Sublime
 ===========
