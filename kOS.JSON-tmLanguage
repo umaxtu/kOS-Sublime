@@ -1,0 +1,139 @@
+{
+  "name": "Kerbal Operating System (kOS)",
+  "scopeName": "source.kerboscript",
+  "fileTypes": [
+    "ks"
+  ],
+  "uuid": "886bf29f-5844-4c49-8542-812a9e0ebc5c",
+  "patterns": [
+    {
+      "match": "//.*",
+      "name": "comment.line.source.kerboscript"
+    },
+    {
+      "match": "(?i:add|print|remove|break|clearscreen|copy|delete|declare|edit|list|lock|\\bon|log|rename|remove|run|set|stage|switch|toggle|unlock|reboot|shutdown)\\s+[^\\.]+$",
+      "name": "invalid.illegal.source.kerboscript"
+    },
+    {
+      "match": "\\b(?i:heading|bearing|direction)\\b",
+      "name": "storage.type.source.kerboscript"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.source.kerboscript"
+        },
+        "2": {
+          "name": "keyword.source.kerboscript"
+        }
+      },
+      "match": "\\s*(?i:(set|log|rename))\\s.*(?i:(to))\\s*",
+      "name": "text.source.kerboscript"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.source.kerboscript"
+        },
+        "2": {
+          "name": "keyword.source.kerboscript"
+        }
+      },
+      "match": "\\s*(?i:(copy))\\s.*(?i:(to|from))\\s*",
+      "name": "text.source.kerboscript"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.source.kerboscript"
+        },
+        "2": {
+          "name": "keyword.source.kerboscript"
+        }
+      },
+      "match": "\\s*(?i:(delete))\\s.*(?i:(from))\\s*",
+      "name": "text.source.kerboscript"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.source.kerboscript"
+        },
+        "2": {
+          "name": "keyword.source.kerboscript"
+        }
+      },
+      "match": "\\b(?i:(lock))\\s.*(?i:(to))\\b",
+      "name": "text.source.kerboscript"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.source.kerboscript"
+        },
+        "2": {
+          "name": "keyword.source.kerboscript"
+        }
+      },
+      "match": "\\b(?i:(print))\\s[^\"]+(?i:(at))\\b",
+      "name": "text.source.kerboscript"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.source.kerboscript"
+        },
+        "2": {
+          "name": "keyword.source.kerboscript"
+        }
+      },
+      "match": "\\b(?i:(when))\\s.+(?i:(then))\\b",
+      "name": "text.source.kerboscript"
+    },
+    {
+      "captures": {
+        "1": {
+          "name": "keyword.source.kerboscript"
+        },
+        "2": {
+          "name": "keyword.source.kerboscript"
+        }
+      },
+      "match": "\\b(?i:(for))\\s.+(?i:(in))\\b",
+      "name": "text.source.kerboscript"
+    },
+    {
+      "match": "\\b(?i:add|remove|break|clearscreen|delete|declare( parameter)?|parameter|edit|print|remove|run|stage|switch to|toggle|unlock|warp|reboot|shutdown|list|reboot|function)\\b",
+      "name": "keyword.source.kerboscript"
+    },
+    {
+      "match": "\\b(?i:until|if|wait|else)\\b",
+      "name": "keyword.control.kerboscript"
+    },
+    {
+      "match": "\\b(?i:not|and|or|true|false|<>|>=|=|>|<)\\b",
+      "name": "keyword.operator.kerboscript"
+    },
+    {
+      "match": "\\b(?i:\\+|-|\\*|/|\\^)\\b",
+      "name": "keyword.operator.kerboscript"
+    },
+    {
+      "match": "\\b(?i:sas|gear|rcs|lights|brakes|legs|chutes|panels|ag1|ag2|ag3|ag4|ag5|ag6|ag7|ag8|ag9|ag0) (on|off)\\b",
+      "name": "support.function.source.kerboscript"
+    },
+    {
+      "match": "\\b(?i:abs|mod|floor|ceiling|round|round|sqrt|sin|cos|tan|arcsin|arccos|arctan|arctan2)\\b",
+      "name": "support.function.source.kerboscript"
+    },
+    {
+      "begin": "\"",
+      "end": "\"",
+      "name": "string.quoted.double.source.kerboscript"
+    },
+    {
+      "match": "[-\\+]?[0-9]*\\.?[0-9]",
+      "name": "constant.numeric.kerboscript"
+    }
+  ]
+}
